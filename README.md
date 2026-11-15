@@ -1,6 +1,6 @@
 # Análise e Refatoração de Algoritmo
 
-**Disciplina / Atividade:** Fórum Avaliativo
+**Disciplina / Atividade:** Algoritmo e Programação / Fórum Avaliativo
 
 **Tema:** Escalabilidade e Estruturas de Repetição em Pseudocódigo
 
