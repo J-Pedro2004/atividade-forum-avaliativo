@@ -14,52 +14,11 @@ A solução é utilizar uma estrutura de repetição, permitindo processar uma q
 
 ## 2. Algoritmo Refatorado
 
-A solução utiliza a estrutura `ENQUANTO` para realizar a leitura das notas. O valor `-1` funciona como sentinela, indicando o encerramento da entrada de dados.
+A refatoração foi realizada utilizando a estrutura de repetição `ENQUANTO`, permitindo a leitura de uma quantidade variável de notas.
 
-Também foi implementada uma validação para aceitar somente notas entre 0 e 10.
+O algoritmo também possui validação das notas informadas e utiliza o valor `-1` para encerrar a entrada de dados.
 
-```portugol
-Algoritmo "CalculaMediaTurmaDinamica"
-
-Var
-   notaAtual, soma, media: Real
-   totalAlunos: Inteiro
-
-Inicio
-   soma <- 0
-   totalAlunos <- 0
-
-   Escreval("Digite as notas dos alunos.")
-   Escreval("Digite -1 para encerrar.")
-
-   Escreva("Nota do aluno ", totalAlunos + 1, ": ")
-   Leia(notaAtual)
-
-   Enquanto (notaAtual <> -1) Faca
-
-      Se (notaAtual >= 0) e (notaAtual <= 10) Entao
-         soma <- soma + notaAtual
-         totalAlunos <- totalAlunos + 1
-      Senao
-         Escreval("Nota inválida! Digite um valor entre 0 e 10.")
-      FimSe
-
-      Escreva("Nota do próximo aluno (ou -1 para encerrar): ")
-      Leia(notaAtual)
-
-   FimEnquanto
-
-   Se (totalAlunos > 0) Entao
-      media <- soma / totalAlunos
-
-      Escreval("Total de alunos: ", totalAlunos)
-      Escreval("Média da turma: ", media:4:2)
-   Senao
-      Escreval("Nenhuma nota válida foi informada.")
-   FimSe
-
-Fimalgoritmo
-```
+O código-fonte completo está disponível no arquivo [`CalculaMediaTurmaDinamica.por`](./CalculaMediaTurmaDinamica.por).
 
 ## 3. Vantagens da Solução
 
